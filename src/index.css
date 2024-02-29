@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.swiper-button-prev::after{
+  color: black ;
+  font-size: medium;
+  aspect-ratio: 1/1;
+}
+.swiper > .swiper-button-next::after{
+  color: black ;
+  font-size: medium;
+}
+.swiper > .swiper-button-next:hover{
+  overflow: visible;
+  background: #000 ;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 40px !important;
+  height: 40px !important;
+  position: relative;
+  bottom: 5rem  ;
+
+}
