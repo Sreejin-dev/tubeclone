@@ -31,8 +31,6 @@ function Contents() {
     <div >
       {" "}
       <Swiper
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
         ref={sliderRef}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
