@@ -15,7 +15,10 @@ const Videos = () => {
                 <h1>Profile</h1>
               </div>
               <div className="border border-black px-2 ">
-                <h1 className="font-bold">Learn English with Ratatouille | Describing an Extraordinary Dish</h1>
+                <h1 className="font-bold">
+                  Learn English with Ratatouille | Describing an Extraordinary
+                  Dish
+                </h1>
                 <h3>Channel Name</h3>
                 <p>
                   view an <span>year</span>

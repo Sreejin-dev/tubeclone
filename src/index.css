@@ -39,8 +39,6 @@ body {
   right: -1rem;
 }
 
-
-
 .swiper > .swiper-button-next::after {
   color: rgb(252, 252, 252);
   font-size: medium;
