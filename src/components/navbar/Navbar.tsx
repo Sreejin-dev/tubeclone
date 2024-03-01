@@ -22,7 +22,6 @@ const Navbar = () => (
             }}
             className="w-10 h-10 hover:cursor-pointer"
           ></div>
-          
         ))}
       </div>
     </div>
