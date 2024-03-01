@@ -4,7 +4,6 @@ import Videos from "./components/videos/Videos"
 
 
 function App() {
-
   return (
  <div>
   <Navbar/>
