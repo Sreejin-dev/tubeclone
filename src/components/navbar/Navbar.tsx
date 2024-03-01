@@ -1,4 +1,4 @@
-import second from "../../assets"
+
 const Navbar = () => (
   <div className="py-2 px-5">
     <div className="flex justify-between">
