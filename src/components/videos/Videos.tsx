@@ -2,9 +2,9 @@
 const Videos = () => {
   return (
     <div className="p-5">
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-3 gap-5">
         {[...Array(21)].map((_, index) => (
-          <div>
+          <div >
             <div
               key={index}
               className="border border-white w-full h-60 rounded-xl"
