@@ -40,7 +40,7 @@ function Contents() {
         navigation
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
-        className=" swiper  "
+        className="swiper"
       >
         {[
           "video",
