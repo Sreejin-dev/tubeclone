@@ -1,3 +1,4 @@
+import second from "../../assets"
 const Navbar = () => (
   <div className="py-2 px-5">
     <div className="flex justify-between">
@@ -16,7 +17,7 @@ const Navbar = () => (
           <div
             key={index}
             style={{
-              backgroundImage: `url('src/assets/icons/${icon}.png')`,
+              backgroundImage: `url('../../assets/icons/${icon}.png')`,
               backgroundSize: "25px",
               backgroundRepeat: "no-repeat",
             }}
