@@ -7,11 +7,15 @@ const Navbar = () => (
       </a>
       <Searcharea />
       <div className="flex gap-3">
-        {["video", "bell", "user"].map((icon, index) => (
-          <div key={index} className="w-7 h-7 hover:cursor-pointer">
-            <img src={`src/assets/icons/${icon}.png`} alt={icon} />
-          </div>
-        ))}
+        <div className="w-7 h-7 hover:cursor-pointer">
+          <img src="src/assets/icons/video.png" />
+        </div>
+        <div className="w-7 h-7 hover:cursor-pointer">
+          <img src="src/assets/icons/bell.png" />
+        </div>{" "}
+        <div className="w-7 h-7 hover:cursor-pointer">
+          <img src="src/assets/icons/user.png" />
+        </div>
       </div>
     </div>
   </div>
