@@ -28,34 +28,47 @@ function Contents() {
     sliderRef.current.swiper.slideNext();
   }, []);
   return (
-    <div >
+    <div className="p-5 ">
       {" "}
       <Swiper
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         ref={sliderRef}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={15}
         slidesPerView={10}
         navigation
         onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")} className="h-20 swiper "
+        onSlideChange={() => console.log("slide change")}
+        className=" swiper  "
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide> <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide> <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide> <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-       
+        {[
+          "video",
+          "bell",
+          "user",
+          "video",
+          "bell",
+          "user",
+          "video",
+          "bell",
+          "user",
+          "video",
+          "bell",
+          "user",
+          "video",
+          "bell",
+          "user",
+        ].map((Contentarea, index) => (
+          <SwiperSlide
+            key={index}
+            className="hover:cursor-pointer bg-[rgb(49,48,48)] rounded-lg p-1 px-2 font-semibold text-center"
+          >
+            {Contentarea}
+          </SwiperSlide>
+        ))}
       </Swiper>
-      <div className="prev-arrow" onClick={handlePrev} />
-      <div className="next-arrow" onClick={handleNext} />
+      <div className="prev-arrow " onClick={handlePrev} />
+      <div className="next-arrow " onClick={handleNext} />
     </div>
   );
 }

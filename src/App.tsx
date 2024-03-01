@@ -1,5 +1,6 @@
 import Content from "./components/contents/Content"
 import Navbar from "./components/navbar/Navbar"
+import Videos from "./components/videos/Videos"
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
  <div>
   <Navbar/>
   <Content/>
+  <Videos/>
  </div>
   )
 }

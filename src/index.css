@@ -2,13 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.swiper-button-prev::after{
-  color: black ;
+body {
+  background: #000;
+  color: white;
+}
+.swiper-button-prev::after {
+  color: white;
   font-size: medium;
 }
-.swiper > .swiper-button-next::after{
-  color: black ;
+.swiper-button-prev {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 10%,
+    rgb(10, 3, 3) 76%,
+    rgba(0, 0, 0, 0.116) 87%,
+    rgba(2, 0, 0, 0) 100%
+  );
+  width: 5rem;
+  position: absolute;
+  left: -1rem;
+}
+.swiper-button-next {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.116) 10%,
+    rgb(10, 3, 3) 76%,
+    rgb(0, 0, 0) 87%,
+    rgb(0, 0, 0) 100%
+  );
+
+  width: 5rem;
+  position: absolute;
+  right: -1rem;
+}
+
+
+
+.swiper > .swiper-button-next::after {
+  color: rgb(252, 252, 252);
   font-size: medium;
 }
