@@ -1,28 +1,16 @@
-
+import Ytlogo from "../../assets/icons/Ytlogo.png";
 const Navbar = () => (
   <div className="py-2 px-5">
     <div className="flex justify-between">
-      <a
-        href="#"
-        className="w-28 h-14"
-        style={{
-          backgroundImage: "url('src/assets/icons/Ytlogo.png')",
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></a>
+      <a href="#" className="w-28 h-14">
+        <img src={Ytlogo} alt="" />
+      </a>
       <Searcharea />
       <div className="flex gap-3">
         {["video", "bell", "user"].map((icon, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundImage: `url('../../assets/icons/${icon}.png')`,
-              backgroundSize: "25px",
-              backgroundRepeat: "no-repeat",
-            }}
-            className="w-10 h-10 hover:cursor-pointer"
-          ></div>
+          <div key={index} className="w-7 h-7 hover:cursor-pointer">
+            <img src={`src/assets/icons/${icon}.png`} alt={icon} />
+          </div>
         ))}
       </div>
     </div>
