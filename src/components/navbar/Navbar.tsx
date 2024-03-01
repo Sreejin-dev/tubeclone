@@ -1,4 +1,7 @@
 import Ytlogo from "../../assets/icons/Ytlogo.png";
+import video from '../../assets/icons/video.png'
+import bell from '../../assets/icons/bell.png'
+import user from '../../assets/icons/user.png'
 const Navbar = () => (
   <div className="py-2 px-5">
     <div className="flex justify-between">
@@ -8,13 +11,13 @@ const Navbar = () => (
       <Searcharea />
       <div className="flex gap-3">
         <div className="w-7 h-7 hover:cursor-pointer">
-          <img src="src/assets/icons/video.png" />
+          <img src={video} />
         </div>
         <div className="w-7 h-7 hover:cursor-pointer">
-          <img src="src/assets/icons/bell.png" />
+          <img src={bell} />
         </div>{" "}
         <div className="w-7 h-7 hover:cursor-pointer">
-          <img src="src/assets/icons/user.png" />
+          <img src={user} />
         </div>
       </div>
     </div>
